@@ -1,0 +1,28 @@
+<nav>
+    <div class="nav-wrapper">
+      <a href="/home">
+        <h5 class="left hide-on-small-only">TECHZARA</h5>
+      </a>  
+      <ul class="right">
+        <li>
+          <div class="input-field col s6">
+            <input type="text" placeholder="Rechercher" [(ngModel)]="q">
+          </div>
+        </li>
+        <li id="search-button">
+          <a class="waves-effect waves-light" href="/home/search?q={{q}}">
+            <i class="fa fa-search"></i>
+          </a>
+        </li>
+        <li><a class="waves-effect waves-light" (click)='logout()'>Logout</a></li>
+        <li class="hide-on-small-only">
+          <p>
+            <label>
+              <input disabled type="checkbox"/>
+              <span>Dark</span>
+            </label>
+          </p>
+        </li>
+      </ul>
+    </div>
+</nav>
